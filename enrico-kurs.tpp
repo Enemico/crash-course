@@ -33,7 +33,7 @@
 --center The shell is capable to send commands to the kernel, by translating the human input so that the kernel can comply to the requests.
 --center In fact most parts of a UNIX operating system consist in lists ( aka "scripts" ) of shell commandline operations.
 --center Over 60% of all the infernet servers are running UNIX / LINUX
-
+---
 --boldon
 --center I am still not impressed.
 --boldoff
@@ -51,7 +51,7 @@
 --center Later he changed his mind and decided to rename it FREAX. But someone thought it wasn't a good idea and ignored him. ( I wonder why.. )
 --center He must have been bored when he wrote Linux, in fact it was started as a freetime project and he did not expect to have success.
 --center He was offered to join efforts with Steve Jobs and write the Apple operating system. He refused because of differences in views about the kernel. No comment.
---center Later versions of Mac OS have been based on UNIX. See the irony? No.
+--center Later versions of Mac OS have been based on UNIX. See the irony?
 
 --center He later wrote git.
 --center Next time you feel like you are just a fool, think about Linux Torvalds.
@@ -61,9 +61,39 @@
 --newpage
 --heading SHELL
 
---center It's so much more powerful than a graphical interface, has lower requirements, and is much more flexible.
---center It's also a brand of fuel, and might power the engine in your car.
---center It's safe: whenever you try to access one, you are asked a username and password, and it implements the state of the art of IT security. For some reason politi.no runs on Windows though.
---center It's just another thing in Linux / Unix with a horrible name. But you can call it "terminal" or "console" too, and it's hardly gonna be any better.
+--center It's so much more powerful than a graphical interface, has much lower requirements, and is much more flexible.
+--center It's also a brand of fuel.
+--center It's safe: whenever you try to access one online, you are asked a username and password, and it implements the state of the art of IT security. The websites of the norwegian police run on Windows instead.
+--center It's just another thing in Linux / Unix with a dull name. But you can call it "terminal", "console" or "command line" too, and it's hardly gonna be any better.
+
+--center There are several types of shell, the most popular of them all is called BASH, but ZSH is also very very cool. All have slightly different characteristics, but you can use any of them.
+--center Almost every program in Linux runs in a shell.
+--center If you master the shell, you have secured yourself a workplace, and possibly you could make a lot of money.
+---
+--boldon
+--center * But Linus Torvalds didn't.
+--boldoff
+--footer sub@krutt.org
+
+--newpage
+--heading ANATOMY OF A COMMAND
+
+--center Every command can be divided in three parts:
+
+---
+* The command itself, that is written first. Can be referred to as "$0". Don't ask, just take it as it is.
+---
+* The first argument of the command, often an option. Can be referred to as $1.
+---
+* The second argument of the command, often it could be a file we are running the command on, in order to do some kind of processing. Can be referred to as $2.
+---
+* The third argument? $3.
+
+--boldon
+--center From now on, it will escalate.
+--boldoff
+
+--footer sub@krutt.org
+
 
 --footer sub@krutt.org
