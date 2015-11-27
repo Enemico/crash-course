@@ -25,32 +25,33 @@
 
 
 --center Jokes build constantly up in my mind, often devoloping randomly around words and barely logical connections, on and on, without me knowing exactly where this will take me.
---center It often works.
---center I have observed though, that this can provoke disproportioned negative emotional reactions in some individuals: frustration, anger, or Justin Bieber.
+--center It's quite random, and it often works.
+--center I have observed though, that this can provoke disproportioned negative emotional reactions in some individuals: frustration, anger, or even Justin Bieber.
 ---
 
 
 
 --boldon
---center If this happens to you, i apologize deeply in advance for that.
+--center If this happens to you, i deeply apologize in advance for that.
 --boldoff
 ---
 
 
 
---center I am aware of this problem and i try to control myself, but the temptation of throwing a joke, no matter how bad or weird, or obnoxious, is often too strong. I am basically a fool.
+--center I am aware of this problem and i try to control myself, but the temptation of throwing a joke, no matter how bad or weird, or obnoxious, is often too strong.
+--center I am basically a fool. I use any acceptable mean to have a laugh.
 --center Language is a weird ( and powerful ) tool, and using it creatively can enhance the pleasure of a communication immensely.
 ---
 
 
 --boldon
---center Or not.
+--center ...or not...
 --boldoff
 ---
 
 
 
---center However, if you get offended, i hope you can forgive me.
+--center However, if you get offended, i really really hope you can forgive me.
 --center I actually do this innocently, hoping to make you laugh, i absolutely don't mean to offend anyone.
 ---
 
@@ -66,7 +67,7 @@
 
 
 
-Now go fuck yourself.
+...and now go fuck yourself.
 --footer sub@krutt.org
 
 --newpage
