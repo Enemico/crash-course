@@ -3,15 +3,14 @@
 --date today
 --heading Teknisk Aperitiff @ Hackeriet
 
---center "This course will probably turn any person into a professional disaster maker, just capable of perfectly faking it
---center until the very moment pressing the enter key will reveal the truth and everything will fail miserably.
---center I take no responsibility for the consequences.
---center In fact i never broke anything, i have never faked it,
---center and if you ask me
---center i probably can't remember anything about it. But i am pretty sure i did not press that enter key.
---center What was the question? Let's have another drink."
+--center An introduction to BASH for beginners
 
---center The Author, autumn 2015
+
+
+
+
+
+
 --footer sub@krutt.org
 
 --newpage
@@ -24,50 +23,11 @@
 ---
 
 
---center Jokes build constantly up in my mind, often devoloping randomly around words and barely logical connections, on and on, without me knowing exactly where this will take me.
---center It's quite random, and it often works.
---center I have observed though, that this can provoke disproportioned negative emotional reactions in some individuals: frustration, anger, or even Justin Bieber.
----
-
-
-
---boldon
---center If this happens to you, i deeply apologize in advance for that.
---boldoff
----
-
-
-
---center I am aware of this problem and i try to control myself, but the temptation of throwing a joke, no matter how bad or weird, or obnoxious, is often too strong.
---center I am basically a fool. I use any acceptable mean to have a laugh.
---center Language is a weird ( and powerful ) tool, and using it creatively can enhance the pleasure of a communication immensely.
----
-
-
---boldon
---center ...or not...
---boldoff
----
-
-
-
---center However, if you get offended, i really really hope you can forgive me.
---center I actually do this innocently, hoping to make you laugh, i absolutely don't mean to offend anyone.
----
-
-
---boldon
---center Sorry.
---boldoff
----
 
 
 
 
 
-
-
-...and now go fuck yourself.
 --footer sub@krutt.org
 
 --newpage
@@ -159,7 +119,53 @@
 --center Unless you are Linus Torvalds.
 --boldoff
 --footer sub@krutt.org
+--newpage
 
+--boldon
+--center THE FILE TREE
+--boldoff
+
+---
+* It's a gerarchical structure that organizes files and directories.
+---
+
+* At the top level of the tree is a main directory that contains all the others, marking the "point of start" of the tree, or the "root" of the tree.
+---
+
+* "Root" is also the name of the administrator user present in all UNIX installations, but the "root" of the tree is also called "slash", as it is in fact a "/" symbol.
+---
+
+* Slash is also the name of a famous british / american musician and producer living in Los Angeles, but he never contributed to the UNIX codebase.
+---
+
+* Under "slash" or "/" you find all the files and directories composing your operating system.
+---
+
+* There are directories like "/etc" ( or "slash etc") containing the configuration files, "/bin" ( or "slash bin") containing the "binaries" or "commands,
+"/lib" containing the libraries, "/var" containing files that vary in dimension like logs, and "/home" containing the users files, and more.
+---
+
+* Whenever we gain access to a shell, we end up in the home directory of the user we logged in as. For example /home/justinbieber. This user directory
+lays two levels under slash, both in UNIX and in the musical world.
+---
+
+* "Root" is a "special" user, so special that has its home directory only one level under slash, "/root".
+---
+
+* I am not making another joke about slash now, but you got the picture.
+---
+
+--center About me.
+
+--footer sub@krutt.org
+
+--newpage
+--heading THE FIRST COMMANDS
+
+
+
+
+--footer sub@krutt.org
 --newpage
 --heading ANATOMY OF A COMMAND
 
