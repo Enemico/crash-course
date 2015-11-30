@@ -50,27 +50,35 @@
 --center * It has been around since the elephant bell trousers' times.
 --center * Big moustaches, Ford Mustang, Clark shoes, Isaac Hayes and many other superfly things. Like the shell.
 ---
---center Yeah right.
+--center Yeah!
 ---
---center * Exists in different variants, f.ex BSD and SYS V
+--center * Exists in different variants, f.ex BSD and SYS V, but we have no time to talk about it.
 ---
 --center UNIX is built up like this: imagine an egg. The yolk is the kernel. The white and the shell surround it. To get to the yolk...
 ---
 
 --boldon
---center ..never mind..
+--center You gonna deal with the shell!
 --boldoff
-
 ---
---center The kernel is in contact with all the hardware components and is capable to control them.
---center The shell is capable to send commands to the kernel, by translating the human input so that the kernel can comply to the requests.
---center In fact most parts of a UNIX operating system consist in lists ( aka "scripts" ) of shell commandline operations.
---center Over 60% of all the infernet servers are running UNIX / LINUX
+
+--center BUT: we are not gonna break the shell. Confused?
+---
+
+--center The kernel is the component in contact with all the hardware devices and is capable to control them all.
+---
+
+--center The shell instead can send commands to the kernel, by translating the human (you) input so that the kernel can comply to the requests..
+--center ..and answer back to the shell that will traslate the message to you.
+---
+
+--center In fact a big part of a UNIX operating system consists in ordered lists or recepies ( aka "scripts" ) made of shell commandline operations.
+--center Over 60% of all the infernet servers are running UNIX / LINUX.
 ---
 
 
 --boldon
---center I am still not impressed.
+--center But we are still not impressed.
 --boldoff
 
 --footer sub@krutt.org
@@ -88,7 +96,7 @@
 --boldoff
 
 ---
---center Later he changed his mind and decided to rename it FREAX. But someone thought it wasn't a good idea and ignored him. ( I wonder why.. )
+--center Later he changed his mind and decided to rename it FREAX. But someone thought it wasn't a good idea and ignored him. ( Thank you ).
 --center He must have been bored when he wrote Linux, in fact it was started as a freetime project and he did not expect to have success.
 --center He was offered to join efforts with Steve Jobs and write the Apple operating system. He refused because of differences in views about the kernel.
 --center Later versions of Mac OS have been based on UNIX. See the irony?
@@ -102,15 +110,25 @@
 
 
 --center He later wrote git.
---center Next time you feel like you are just a fool, think about Linux Torvalds.
---center BTW, the pinguin was designed by Larry Ewing. He's cool.
+---
+
+--center Next time you feel like you are just a fool, think about Linus Torvalds.
+--center Then rethink, because Linus Torvalds is probably better than you.
+---
+--center ...at Linux.
+--center BTW, the pinguin logo was designed by Larry Ewing.
 --footer sub@krutt.org
 
 --newpage
 --heading SHELL
 
---center It's so much more powerful than a graphical interface, has much lower requirements, and is much more flexible.
+--center It's so much more powerful than a graphical interface, BECAUSE it has much lower requirements, an aspect that makes it much more flexible.
+--center Shells can run using an insane amount of different possible physical links to a computer, the internet is only one.
+---
+
 --center It's also a brand of fuel.
+---
+
 --center It's safe: whenever you try to access one online, you are asked a username and password. It implements the state of the art of IT security.
 ---
 
@@ -118,15 +136,15 @@
 ---
 
 
---center It's just another thing in Linux / Unix with a dull name. But you can call it "terminal", "console" or "command line" too. 
+--center It's just another thing in Linux / Unix with a dull name. But you can call it "terminal", "console" or "command line" too.
 ---
 --center And it's hardly gonna be any better.
 ---
 
 
---center There are several types of shell, the most popular of them all is called BASH, but ZSH is also very very cool. All have slightly different characteristics, but you can use any of them.
+--center There are several types of shell, the most popular of them all is called BASH, but ZSH is also majestic. All have slightly different characteristics, but you can use any of them more or less in the same way.
 --center Almost every program in Linux runs in a shell.
---center If you master the shell, you have secured yourself a workplace, and you could possibly make a lot of money.
+--center If you master the shell, you have secured yourself a workplace, maybe a career, and you could also possibly make a lot of money.
 ---
 
 
@@ -167,7 +185,7 @@ lays two levels under slash, both in UNIX and in the musical world.
 * "Root" is a "special" user, so special that has its home directory only one level under slash, "/root".
 ---
 
-* I am not making another joke about slash now, but you got the picture.
+* I am not making another joke about Slash now, but you got the picture.
 ---
 
 --center About me.
@@ -176,7 +194,38 @@ lays two levels under slash, both in UNIX and in the musical world.
 
 --newpage
 --heading THE FIRST COMMANDS
+---
 
+--boldon
+--center The commands might look difficult to remember at first, but note that many of them are in fact acronymes.
+---
+--center Nerds LOVE to use acronymes, both to "type less" and remember things.
+---
+--center Sometimes they overdo, and they sound like maniacs.
+--center That definitely doesn't help them getting laid in some case.
+---
+--center ...never mind...
+--boldoff
+---
+
+* "cwd", short for  "current working directory", tells you where you are in the tree.
+When you log in, you end up in your home directory, so we start from there.
+---
+
+* "ls", or "list", shows what is the content of the directory you are in.
+---
+
+* "cd", or "change directory", is used to move from a directory to another.
+---
+
+* to the side of the files contained in every directory, you will always find ".." and ".", the first one is like a "stair" to the upper level, that you can use with "cd".
+---
+
+...while the second, "." means "here".
+---
+
+
+--center Don't buffer, just take it as it is. We get there.
 
 
 
@@ -195,11 +244,11 @@ lays two levels under slash, both in UNIX and in the musical world.
 --center Every command can be divided in three parts:
 
 ---
-* The command itself, that is written first. Can be referred to as "$0". Don't ask, just take it as it is.
+* The command itself, that is written first. Can be referred to as "$0".
 ---
 * The first argument of the command, often an option. Can be referred to as "$1".
 ---
-* The second argument of the command, often it could be a file we are running the command on, in order to do some kind of processing. Can be referred to as "$2".
+* The second argument of the command, could be a file we are running the command on, in order to do some kind of processing. Can be referred to as "$2".
 ---
 * The third argument? "$3".
 ---
@@ -215,8 +264,10 @@ lays two levels under slash, both in UNIX and in the musical world.
 * An exit code of "0" is normally "true", while "1" being "false".
 ---
 
-* There is many other possibilities here, and when i say "can" it's a possibility, but still quite common.
+* There are exceptions. But we start easy.
 --footer sub@krutt.org
 
 --newpage
+
+
 --footer sub@krutt.org
