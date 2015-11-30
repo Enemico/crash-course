@@ -3,7 +3,13 @@
 --date today
 --heading Teknisk Aperitiff @ Hackeriet
 
+
+
+
+
 --center An introduction to BASH for beginners
+
+
 
 
 
@@ -14,13 +20,19 @@
 --footer sub@krutt.org
 
 --newpage
---heading DISCLAIMER
+--heading WARNING
 ---
 
+
+
+
 --boldon
---center I have a weird sense of humour.
+--center I have a weird sense of humour. Please forgive me.
 --boldoff
 ---
+
+
+
 
 
 
@@ -35,10 +47,13 @@
 
 --center UNIX is OLD
 
---center * It has been around since the hippies started to walk the land.
---center * I wasn't there then (really?)
+--center * It has been around since the elephant bell trousers' times.
+--center * Big moustaches, Ford Mustang, Clark shoes, Isaac Hayes and many other superfly things. Like the shell.
+---
+--center Yeah right.
+---
 --center * Exists in different variants, f.ex BSD and SYS V
-
+---
 --center UNIX is built up like this: imagine an egg. The yolk is the kernel. The white and the shell surround it. To get to the yolk...
 ---
 
