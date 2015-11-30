@@ -178,17 +178,20 @@
 "/lib" containing the libraries, "/var" containing files that vary in dimension like logs, and "/home" containing the users files, and more.
 ---
 
-* Whenever we gain access to a shell, we end up in the home directory of the user we logged in as. For example /home/justinbieber. This user directory
+* When talking about locations in the filetree, we refer to them as "paths".
+---
+
+* Whenever we gain access to a shell, we end up in the home directory of the user we logged in as. For example /home/justinbieber. This path
 lays two levels under slash, both in UNIX and in the musical world.
 ---
 
 * "Root" is a "special" user, so special that has its home directory only one level under slash, "/root".
 ---
 
-* I am not making another joke about Slash now, but you got the picture.
+* I don't dare to make another joke about Slash now. You got the picture anyway.
 ---
 
---center About me.
+--center About me?
 
 --footer sub@krutt.org
 
@@ -225,7 +228,7 @@ When you log in, you end up in your home directory, so we start from there.
 ---
 
 
---center Don't buffer, just take it as it is. We get there.
+--center Don't sweat and buffer, just take it as it is. We get there.
 
 
 
@@ -264,10 +267,57 @@ When you log in, you end up in your home directory, so we start from there.
 * An exit code of "0" is normally "true", while "1" being "false".
 ---
 
-* There are exceptions. But we start easy.
+* We can request the exit code of a command by using the command "echo" followed by "$?".
+
+* There are exceptions here. Many. We are being superficial now. But we make it simple at the beginning, because not everyone is born Linus Torvalds.
+---
+
+--center Someone might make a stupid joke now.
 --footer sub@krutt.org
 
 --newpage
+--heading MORE COMMAND FOO
+--heading ("foo" means both "knowledge" and "shit" in the nerd world)
+---
+
+--center Again, don't use this stuff with the intent to impress anyone.
+---
+
+
+* "man", or "manual", gives you a complete and exhaustive manual page about a command, showing you, between other things, what are the required values ( if any ) one should
+type in after the command itself: some commands require an option, some commands are meant to be ran on a file to process it. It varies a lot. The argument that "man" requires is the command you want to know about. Example "man ls".
+---
+
+* "ls" can accept some option, like for example -la (options are often preceeded by "-" or "dash") that tunes and specify the precision we expect when we send the request to the shell.
+"-la", "list all", tells the shell that we want more details than just the names of the files contained in the path. For example "ls -la ." or "here". 
+Or: "ls -la /home/justinbieber"
+---
+
+* So, again: $0 = "ls", $1 = "-la", "$2" = "/home/justinbieber". No such file or directory ( the shell is such a perfect world sometimes ).
+"echo $?" 1. False, we have no home for justinbieber.
+---
+
+
+
+--boldon
+--center Smelling the ice cream yet?
+---
+--center Does ice cream have a smell?
+--boldoff
 
 
 --footer sub@krutt.org
+--newpage
+
+--heading CONTENT (of a file)
+---
+
+* Very many files in Linux / UNIX contain text. Not always easy to read, sometimes totally unreadable, but still text, and we can access and manipulate all of this text in many ways. It's AWESOME, considering the type of world we are living in. I will spend a few more words about it: this is one of the reason why it's called "open source", and also free to read, learn, modify and redistribute. This means a LOT for a lot of people.
+---
+
+* "cat", or "concatenate", a bit difficult to guess at first, "connects" the input to the output. You input a file, it spits out the content.
+
+* "less" 
+
+
+
