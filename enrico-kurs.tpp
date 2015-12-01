@@ -289,7 +289,7 @@ type in after the command itself: some commands require an option, some commands
 ---
 
 * "ls" can accept some option, like for example -la (options are often preceeded by "-" or "dash") that tunes and specify the precision we expect when we send the request to the shell.
-"-la", "list all", tells the shell that we want more details than just the names of the files contained in the path. For example "ls -la ." or "here". 
+"-la", "list all", tells the shell that we want more details than just the names of the files contained in the path. For example "ls -la ." or "here".
 Or: "ls -la /home/justinbieber"
 ---
 
@@ -315,9 +315,29 @@ Or: "ls -la /home/justinbieber"
 * Very many files in Linux / UNIX contain text. Not always easy to read, sometimes totally unreadable, but still text, and we can access and manipulate all of this text in many ways. It's AWESOME, considering the type of world we are living in. I will spend a few more words about it: this is one of the reason why it's called "open source", and also free to read, learn, modify and redistribute. This means a LOT for a lot of people.
 ---
 
-* "cat", or "concatenate", a bit difficult to guess at first, "connects" the input to the output. You input a file, it spits out the content.
+* "cat", or "concatenate", a bit difficult to guess at first, "connects" the input to the output. You git it a file as an input, it spits out the content. $1 is the file.
+---
 
-* "less" 
+* "less" and "more", "more or less like cat", they have better controls to steer the output of the content, search possibilities and so on. $1 is the file.
+---
+
+* We are not covering the editors here, mostly because we don't want to exactly what the terrorist want us to do: polarize concentrate on antagonist positions, radicalize our views and focus on war and pedobear.
+---
+
+
+
+
+--footer sub@krutt.org
+--newpage
+
+--heading COPY, MOVE, REMOVE, RENAME
+---
+
+* "cp", or "copy". Takes the argument (being a file or a directory), and copies it over to a path.
+---
+
+* "mv", or "move". Same as copy, but the original file will disappear from it's original path, and could get a new name in the destination. Move can in fact be used as a rename command, and is also the most used command to achieve that.
+---
 
 
 
