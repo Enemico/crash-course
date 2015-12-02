@@ -268,6 +268,7 @@ When you log in, you end up in your home directory, so we start from there.
 ---
 
 * We can request the exit code of a command by using the command "echo" followed by "$?".
+---
 
 * There are exceptions here. Many. We are being superficial now. But we make it simple at the beginning, because not everyone is born Linus Torvalds.
 ---
@@ -284,16 +285,20 @@ When you log in, you end up in your home directory, so we start from there.
 ---
 
 
-* "man", or "manual", gives you a complete and exhaustive manual page about a command, showing you, between other things, what are the required values ( if any ) one should
+* "man", or "manual"
+
+gives you a complete and exhaustive manual page about a command, showing you, between other things, what are the required values ( if any ) one should
 type in after the command itself: some commands require an option, some commands are meant to be ran on a file to process it. It varies a lot. The argument that "man" requires is the command you want to know about. Example "man ls".
 ---
 
-* "ls" can accept some option, like for example -la (options are often preceeded by "-" or "dash") that tunes and specify the precision we expect when we send the request to the shell.
-"-la", "list all", tells the shell that we want more details than just the names of the files contained in the path. For example "ls -la ." or "here".
+* "ls" or "list"
+
+can accept some option, like for example -la (options are often preceeded by "-" or "dash") that tunes and specify the precision we expect when we send the request to the shell. "-la", "list all", tells the shell that we want more details than just the names of the files contained in the path. For example "ls -la ." or "here".
 Or: "ls -la /home/justinbieber"
 ---
 
-* So, again: $0 = "ls", $1 = "-la", "$2" = "/home/justinbieber". No such file or directory ( the shell is such a perfect world sometimes ).
+* So, again: $0 = "ls", $1 = "-la", "$2" = "/home/justinbieber".
+No such file or directory ( the shell is such a perfect world sometimes ).
 "echo $?" 1. False, we have no home for justinbieber.
 ---
 
@@ -330,7 +335,7 @@ Or: "ls -la /home/justinbieber"
 --footer sub@krutt.org
 --newpage
 
---heading COPY, MOVE, REMOVE, RENAME
+--heading COPY, MOVE, RENAME, REMOVE
 ---
 
 * "cp", or "copy". Takes the argument (being a file or a directory), and copies it over to a path.
@@ -338,6 +343,26 @@ Or: "ls -la /home/justinbieber"
 
 * "mv", or "move". Same as copy, but the original file will disappear from it's original path, and could get a new name in the destination. Move can in fact be used as a rename command, and is also the most used command to achieve that.
 ---
+
+* "rm", or "remove". It deletes a file, or, with the -r option, all the files recursively. Use with caution, there is no trashbin.
+---
+
+--footer sub@krutt.org
+--newpage
+
+--heading OWNERSHIP OF FILES / DIRECTORIES
+
+
+--center So far so good, but until now we have been considering just one user. You. You run commands after you have been autenthicated at login and authorized to execute certain binaries and scripts, and every process you will spawn, will be ran as you. The same applies for all users having an account on the machine, including those that are not phisical persons, but simply software components of the operating system. This might sound a bit funky, but it's a quite effective way to separate the areas of influence of the different users and enforce a good level of security. Users are also organized in groups so that is easier to classify those areas. In fact every user can access the files that are either available to her or to her group. To increase granularity we can also specify if the ownership is partial ( the user can read the file ), if it is possible to also modify/rename/remove the file, and if the file can be executed ( if that is a possible scenario, ie, the file is a script or a program ).
+---
+
+
+--center If you understood this, consider that this applies also to directories.
+
+--footer sub@krutt.org
+--newpage
+
+--heading PERMISSIONS
 
 
 
