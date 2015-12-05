@@ -335,7 +335,7 @@ No such file or directory ( the shell is such a perfect world sometimes ).
 --footer sub@krutt.org
 --newpage
 
---heading COPY, MOVE, RENAME, REMOVE
+--heading COPY, MOVE, RENAME, REMOVE, LINK
 ---
 
 * "cp", or "copy". Takes the argument (being a file or a directory), and copies it over to a path.
@@ -345,6 +345,9 @@ No such file or directory ( the shell is such a perfect world sometimes ).
 ---
 
 * "rm", or "remove". It deletes a file, or, with the -r option, all the files recursively. Use with caution, there is no trashbin.
+---
+
+* "ln", or "link". It creates a link between to files. $1 is the destination of the link, $2 the source file.
 ---
 
 --footer sub@krutt.org
@@ -364,5 +367,63 @@ No such file or directory ( the shell is such a perfect world sometimes ).
 
 --heading PERMISSIONS
 
+--beginshelloutput
+sub@calamaro:/home/pippo$ ls -al
+total 80
+drwxr-xr-x 15 pippo pippo 4096 Nov 16 18:26 .
+drwxr-xr-x  6 root  root  4096 Nov 16 18:24 ..
+-rw-------  1 pippo pippo   40 Nov 16 18:27 .bash_history
+-rw-r--r--  1 pippo pippo  220 Nov 16 18:24 .bash_logout
+-rw-r--r--  1 pippo pippo 3637 Nov 16 18:24 .bashrc
+drwx------  8 pippo pippo 4096 Nov 16 18:27 .cache
+drwx------ 13 pippo pippo 4096 Nov 16 18:26 .config
+drwxr-xr-x  2 pippo pippo 4096 Nov 16 18:25 Desktop
+drwxr-xr-x  2 pippo pippo 4096 Nov 16 18:25 Documents
+drwxr-xr-x  2 pippo pippo 4096 Nov 16 18:25 Public
+drwxr-xr-x  2 pippo pippo 4096 Nov 16 18:25 Templates
+drwxr-xr-x  2 pippo pippo 4096 Nov 16 18:25 Videos
+--endshelloutput
+
+user = u
+group = g
+others = o
+
+r = read
+w = write
+x = execute
+
+---
+"chown" aka "change owner", can be ran to modify the ownership of files. But, to change the permission of a file, the user must own it, or be root.
+---
+"chmod" aka "change mode", changes the permissions for the owner "u", the group "g", and all other users "o".
+It is possible to use definitions like g+x (give execution rights to the group), or o+w (write rights to all others).
+
+
+--footer sub@krutt.org
+--newpage
+
+--heading I CANZ CHMOD
+
+0 = no permissions
+---
+
+1 = x
+---
+
+2 = w
+---
+
+4 = r
+---
+
+5 (4+1) = read and execute
+---
+
+6 (4+2) = read and write
+---
+
+7 (4+2+1) = read write and execute ( aka SATAN )
+
+--footer sub@krutt.org
 
 
